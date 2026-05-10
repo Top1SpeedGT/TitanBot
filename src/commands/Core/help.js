@@ -164,12 +164,17 @@ export async function createInitialHelpMenu(client) {
 
     const bugReportButton = new ButtonBuilder()
         .setLabel("Report Bug")
-        .setURL("
+        .setURL("")
         .setStyle(ButtonStyle.Danger);
 
     const supportButton = new ButtonBuilder()
         .setLabel("Nova Corp / Support Server")
         .setURL("https://discord.gg/Kb8MW4CP7c")
+        .setStyle(ButtonStyle.Link);
+
+    const touchpointButton = new ButtonBuilder()
+        .setLabel("Cookie Clicker")
+        .setURL("https://cookieclicker.com")
         .setStyle(ButtonStyle.Link);
     
     const selectRow = createSelectMenu(
@@ -181,6 +186,7 @@ export async function createInitialHelpMenu(client) {
     const buttonRow = new ActionRowBuilder().addComponents([
         bugReportButton,
         supportButton,
+        touchpointButton,
     ]);
 
     return {
