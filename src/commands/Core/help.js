@@ -165,7 +165,7 @@ export async function createInitialHelpMenu(client) {
     const bugReportButton = new ButtonBuilder()
         .setLabel("Report Bug")
         .setURL("https://www.youtube.com/")
-        .setStyle(ButtonStyle.Danger);
+        .setStyle(ButtonStyle.Link);
 
     const supportButton = new ButtonBuilder()
         .setLabel("Nova Corp / Support Server")
