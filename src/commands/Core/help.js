@@ -164,7 +164,7 @@ export async function createInitialHelpMenu(client) {
 
     const bugReportButton = new ButtonBuilder()
         .setLabel("Report Bug")
-        .setURL("")
+        .setURL("Top1SpeedGT.github.io")
         .setStyle(ButtonStyle.Danger);
 
     const supportButton = new ButtonBuilder()
