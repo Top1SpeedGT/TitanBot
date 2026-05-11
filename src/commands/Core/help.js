@@ -158,7 +158,7 @@ export async function createInitialHelpMenu(client) {
     );
 
     embed.setFooter({ 
-        text: "Made with ❤️" 
+        text: "Made by Nova Corp" 
     });
     embed.setTimestamp();
 
@@ -216,7 +216,7 @@ export default {
             try {
                 const closedEmbed = createEmbed({
                     title: "Help menu closed",
-                    description: "Help menu has been closed, use /help again.",
+                    description: "Help menu has been timed out. Please use /help again to open a new help panel!",
                     color: "secondary",
                 });
 
